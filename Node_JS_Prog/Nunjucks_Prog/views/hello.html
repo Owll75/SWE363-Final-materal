@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+</head>
+<body>
+    Hello from HTML for {{info2.fname}}
+    <br>
+    
+    {%if (info2.a>4)%}
+        <h3>Value is {{info2.a}}</h3>
+        <p>I am OK</p>
+    {%endif%}
+  
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+   
+    <ul>
+        {%for item in list%}
+        <li>{{item.n}} and {{item.d}}</li>
+        {%endfor%}
+    </ul>
+
+</body>
+</html>

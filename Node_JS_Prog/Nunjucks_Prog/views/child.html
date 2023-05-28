@@ -1,0 +1,15 @@
+{% extends "parent.html" %}
+
+<ul>
+    {% block nav %}
+        {{super()}}
+        <li><a href=""> I am child</a></li>
+    {% endblock %}
+</ul>
+
+{% block left %}
+
+This is the left side!
+
+{% endblock %}
+

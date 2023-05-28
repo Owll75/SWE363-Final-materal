@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grandparent">
+        <div class="parent-1 parent">Parent 1</div> 
+        <div class="parent-2 parent"> 
+            Text
+            <!-- Comment -->
+            <span class="child">Child</span>
+        </div>
+    </div>
+
+    <script>
+       const parent1 = document.querySelector('.parent-1');
+       console.log(parent1.parentElement); 
+       console.log(parent1.parentNode);
+       console.log(parent1.children);
+       console.log(parent1.childNodes); 
+       
+       const parent2 = document.querySelector('.parent-2');
+       console.log(parent2.children);
+       console.log(parent2.childNodes); 
+       
+    //    const parents = document.getElementsByClassName('parent');
+    //    console.log(parents);
+    //    const newDiv = document.createElement('div'); 
+    //    newDiv.classList.add('parent');
+    //    const grandParent = document.querySelector('.grandparent');
+    //    grandParent.appendChild(newDiv);
+    //    console.log(parents);
+
+    //    const parents = document.querySelectorAll('.parent');
+    //    console.log(parents);
+    //    const newDiv = document.createElement('div'); 
+    //    newDiv.classList.add('parent');
+    //    const grandParent = document.querySelector('.grandparent');
+    //    grandParent.appendChild(newDiv);
+    //    console.log(parents);
+
+    </script>
+</body>
+</html>
