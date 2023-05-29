@@ -17,31 +17,35 @@
     </div>
 
     <script>
-       const parent1 = document.querySelector('.parent-1');
-       console.log(parent1.parentElement); 
-       console.log(parent1.parentNode);
-       console.log(parent1.children);
-       console.log(parent1.childNodes); 
+    //    const parent1 = document.querySelector('.parent-1');
+    //    console.log(parent1.parentElement); 
+    //    console.log(parent1.parentNode);
+    //    console.log(parent1.children);
+    //    console.log(parent1.childNodes); 
        
-       const parent2 = document.querySelector('.parent-2');
-       console.log(parent2.children);
-       console.log(parent2.childNodes); 
+    //    const parent2 = document.querySelector('.parent-2');
+    //    console.log(parent2.children);
+    //    console.log(parent2.childNodes); 
        
     //    const parents = document.getElementsByClassName('parent');
     //    console.log(parents);
     //    const newDiv = document.createElement('div'); 
     //    newDiv.classList.add('parent');
+    //    newDiv.textContent= "hassan"
+
     //    const grandParent = document.querySelector('.grandparent');
     //    grandParent.appendChild(newDiv);
     //    console.log(parents);
 
     //    const parents = document.querySelectorAll('.parent');
-    //    console.log(parents);
-    //    const newDiv = document.createElement('div'); 
-    //    newDiv.classList.add('parent');
-    //    const grandParent = document.querySelector('.grandparent');
-    //    grandParent.appendChild(newDiv);
-    //    console.log(parents);
+       const parents = document.getElementsByClassName('parent')
+       console.log(parents);
+       const newDiv = document.createElement('button'); 
+       newDiv.classList.add('parent');
+       const grandParent = document.querySelector('.grandparent');
+       grandParent.appendChild(newDiv);
+       newDiv.textContent="hi"
+       console.log(parents);
 
     </script>
 </body>

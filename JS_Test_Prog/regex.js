@@ -1,6 +1,7 @@
 let text = "Web Engineering";
 // let text = new RegExp("Web Engineering");
-let n = text.search(/engiNeering/i);
+let n = text.search(/[e]{2}/);
+console.log(n)
 // console.log(n);
 
 // text = text.replace(/engiNeering/i, "Programming");
@@ -8,20 +9,20 @@ let n = text.search(/engiNeering/i);
 
 var str = "My favorite 6+ color is gray. Hex colorrrr code is 808080. I beleive you are not Color blind. If you are not colour blind then tell me what is your favourite colourr? or you like multiple colors?."
 
-var res = str.match(/\d\W/gi);
-console.log(res);
-
-// const pattern = /Life/i;
-// console.log(pattern.test("The best things in life are free!"));
-
-// var str = "The rain in SPAIN stays mainly in the plain";
-// var res = str.match(/ain/gi);
+// var res = str.search(/[is]/i);
 // console.log(res);
 
+// const pattern = /the/i;
+// console.log(pattern.test("The best things in life are free!"));
+
+var str = "The rain in SPAIN stays mainly in the plain";
+var res = str.match(/ain/gi);
+console.log(res);
 
 
-// let namePattern = /[A-Z][a-z]+ [A-Z][a-z]+/;
-// console.log(namePattern.test("King Fahd University")); 
+
+let namePattern = /[A-Z][a-z]+ [A-Z][a-z]+/;
+console.log(namePattern.test("King Fahd University")); 
 
 // let studentIdPattern = new RegExp("\d{1}");
 // let studentIdPattern = /1\d{6}/;

@@ -10,21 +10,21 @@
 //     console.log("Hello Web Eng.");
 // }
 
-// function multiply(a, b) {
-//      alert(a * b);
-// }
+function multiply(a, b) {
+     alert(a * b);
+}
 
-// setTimeout(multiply, 3000, 20, 10);
+setTimeout(multiply, 3000, 20, 10);
 
 var c = 0;
 
 function abc(){
     c++;
     console.log("Hello Web Eng. - " + c);
-    
     if(c==5){
         clearInterval(timerID);
     }
 }
 
 var timerID = setInterval(abc, 1000);
+// console.log(timerID)

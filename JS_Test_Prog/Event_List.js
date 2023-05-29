@@ -2,14 +2,14 @@
 document.querySelector('.box').addEventListener('click',function(e){
     document.querySelector('.box').style.background = 'red';
     console.log(e   );
-});
-
+}
+);
 let divBox = document.querySelector('.box').addEventListener('mouseleave',xyz);
 
 document.querySelector('.box').onmouseleave = xyz;
 
 function xyz(){
-    document.querySelector('.box').style.background = 'green';
+    document.querySelector('.box').style.background = 'blue';
     this.style.border='10px pink solid';
 }
 

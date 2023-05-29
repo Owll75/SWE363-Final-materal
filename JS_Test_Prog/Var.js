@@ -96,4 +96,22 @@ console.log(fruits);
 var myArray = [1, , 3, 4];
 for (el in myArray){
     console.log(myArray[el]);
-}
+};
+let nickName = "ALI AL-Harbi"
+// let fName = nickName.substring(0, nickName.indexOf("Harbi")); //ALI AL-
+let fName = nickName.substring(0, nickName.indexOf(" "));
+let greeting = `Hi ${fName}`
+console.log(greeting)
+const factorial = function factorial(x) {
+    // Same as function foobar(x)
+    if (x <= 1) {
+    return 1;
+    }
+    return x * factorial(x - 1);
+    }
+let user=[];
+console.log(typeof user == 'object')
+let course = { code: "SWE-363", "instructors": ["Dr. A", "Mr. B"] }
+course.hours = 3; // create/modify property
+course['final exam'] = 'open book' //if the key contains space
+console.log(course.instructors)

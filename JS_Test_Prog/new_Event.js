@@ -1,11 +1,12 @@
-function xyz(sourceElement, arg1, arg2, arg3){
+function xyz(element, arg1, arg2, arg3){
     // let x = document.getElementById('testid');
     // x.innerHTML = "I am set by click";
     // x.style.color='green';
     
-    console.log("source element: " + sourceElement);
-    sourceElement.innerHTML='hi I am source: ' + arg2 ;
+    // console.log("source element: " + element);
+    element.innerHTML='hi I am source: ' + arg2 ;
     console.log("sum: " + (arg1+arg2+arg3));
+    console.log((2+"1")*2)
 }
 
 function getMonth(e){
@@ -16,37 +17,37 @@ function getMonth(e){
 }
 
 
-let month = document.getElementById('month').onchange=getMonth;
+// let month = document.getElementById('month').onchange=getMonth;
 
 // let month = document.getElementById('month').addEventListener('change', getMonth);
 
-// let month = document.getElementById('month').addEventListener('change', ()=>{
-//     let sel = document.getElementById('month').value;
-//     // console.log(e.target);
-//     document.getElementById('monthName').innerHTML=sel;
-//     document.getElementById('monthName').style.color='red';
-// });
+let month = document.getElementById('month').addEventListener('change', ()=>{
+    let sel = document.getElementById('month').value;
+    // console.log(e.target);
+    document.getElementById('monthName').innerHTML=sel;
+    document.getElementById('monthName').style.color='blue';
+});
 
 
 
 
 
 
-// console.log(document.querySelector('#btn2'));
+console.log(document.querySelector('#btn2'));
 
-// document.querySelector('#btn2').onclick=process;
+document.querySelector('#btn2').onclick=process;
 
-// function process(event){
-//     console.log(event.target);
+function process(event){
+    console.log(event.target);
 
-// }
+}
 
 
-// function changeUP(){
-//     // console.log('hello');
-//     const txtC = document.getElementById('txt');
-//     txtC.value=txtC.value.toUpperCase();
-// }
+function changeUP(){
+    // console.log('hello');
+    const txtC = document.getElementById('txt');
+    txtC.value=txtC.value.toUpperCase();
+}
 
 
 // function changeColor(sourceElement){

@@ -14,7 +14,9 @@ switch(req.url){
     case '/about':
         path += 'about.html';
         break;
-    
+    case '/about':
+        path += 'form.html';
+        break;
     default:
         path += '404.html';
         break; 

@@ -4,8 +4,8 @@ button.addEventListener('click', ()=>{
     console.log("First button clicked");
 });
 
-button.addEventListener('click', ()=>{
-    console.log("Second button clicked");
+button.addEventListener('onmouseleave', ()=>{
+    console.log("sssss button clicked");
 });
 
 button.onclick = ()=>{

@@ -13,14 +13,23 @@
         Password: <input type="password" name="password"/>
         <input type="submit" value="Register" />
     </form>
-
+    <form action="" name="myforme" onsubmit="return validate()">
+        Email: <input type="email" name="email"/>
+        Password: <input type="password" name="password"/>
+        <input type="submit" value="Register" />
+    </form>
+    <p name="hassan">
+         <span name="spann">hassan</span>
+    </p>
     <script>
         function validate(){
-            let email = document.myform.email.value;
+            let email = document.myforme.email.value;
+            // let pp= document.hassan.spann.value
             if(email== ""){
                 alert("Email is mandatory");
                 return false;
-            }     
+            }
+            // console.log(pp) 
             return true;
         }
     </script>
